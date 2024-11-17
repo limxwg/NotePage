@@ -36,7 +36,10 @@ export default defineConfig({
       {
         text: "前端工程化",
         items: [
-          { text: "Webpack 5", link: "" },
+          {
+            text: "Webpack 5",
+            link: "/project/webpack/00_关于webpack.md",
+          },
           { text: "Vite", link: "" },
           { text: "JavaScript", link: "" },
         ],
@@ -58,16 +61,40 @@ export default defineConfig({
       },
     ],
 
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-    ],
-
+    sidebar: {
+      "/project/webpack/": [
+        {
+          text: "介绍",
+          items: [
+            {
+              text: "关于 Webpack",
+              link: "/project/webpack/00_关于webpack.md",
+            },
+            {
+              text: "使用 Webpack",
+              link: "/project/webpack/01_使用webpack.md",
+            },
+            {
+              text: "webpack.config.js",
+              link: "/project/webpack/02_webpack_config.md",
+            },
+          ],
+        },
+        {
+          text: "配置 webpack",
+          items: [
+            {
+              text: "Webpack",
+              link: "",
+            },
+            {
+              text: "Webpack",
+              link: "",
+            },
+          ],
+        },
+      ],
+    },
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
