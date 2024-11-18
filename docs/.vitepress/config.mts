@@ -21,7 +21,10 @@ export default defineConfig({
       {
         text: "前端进阶",
         items: [
-          { text: "TypeScript", link: "" },
+          {
+            text: "TypeScript",
+            link: "/advanced/ts/类型、类型系统与类型检查.md",
+          },
           { text: "Vue", link: "" },
           { text: "React", link: "" },
         ],
@@ -38,7 +41,7 @@ export default defineConfig({
         items: [
           {
             text: "Webpack 5",
-            link: "/project/webpack/00_关于webpack.md",
+            link: "/project/webpack/关于webpack.md",
           },
           { text: "Vite", link: "" },
           { text: "JavaScript", link: "" },
@@ -62,21 +65,31 @@ export default defineConfig({
     ],
 
     sidebar: {
+      "/advanced/ts/": [
+        {
+          items: [
+            {
+              text: "类型、类型系统与类型检查",
+              link: "/advanced/ts/类型、类型系统与类型检查.md",
+            },
+          ],
+        },
+      ],
       "/project/webpack/": [
         {
           text: "介绍",
           items: [
             {
               text: "关于 Webpack",
-              link: "/project/webpack/00_关于webpack.md",
+              link: "/project/webpack/关于webpack.md",
             },
             {
               text: "使用 Webpack",
-              link: "/project/webpack/01_使用webpack.md",
+              link: "/project/webpack/使用webpack.md",
             },
             {
               text: "webpack.config.js",
-              link: "/project/webpack/02_webpack_config.md",
+              link: "/project/webpack/webpack_config.md",
             },
           ],
         },
