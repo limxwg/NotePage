@@ -57,7 +57,7 @@ module.exports = {
 }
 ```
 
-## 3.运行 Webpack
+## 运行 Webpack
 
 ```bash
 pnpm run build

@@ -163,6 +163,8 @@ module.exports = {
 
 用途：定义加载器（loaders），用于处理项目中的不同类型文件。
 
+**以添加 `bebal-loader` 为例：**
+
 `bebal-loader` 是一个 Babel 加载器，用于将 ES6+ 代码转换为向后兼容的 JavaScript 代码，以便在旧版浏览器中运行。
 
 ```js
@@ -188,7 +190,13 @@ module.exports = {
 
 用途：添加插件（plugins），用于执行范围更广的自定义操作，如环境变量注入、代码分割等。
 
-处理 HTML 文件模版，并自动将打包后的 JavaScript 文件引入到 HTML 文件中。
+**以使用 index.html 模版为例：**
+
+使用 index.html 模版，可以自动将打包后的 JavaScript 文件引入到 HTML 文件中。
+
+:::tip 提示
+需要安装 `html-webpack-plugin`。
+:::
 
 ```js
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -200,6 +208,21 @@ module.exports = {
     }),
   ],
 };
+```
+
+HTML 文件模版
+
+```html
+<!-- ./src/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body></body>
+</html>
 ```
 
 ## resolve
@@ -225,6 +248,16 @@ module.exports = {
 };
 ```
 
+```js
+// 省略扩展名前缀
+import { add } from "./src/utils.ts"; // [!code --]
+import { add } from "./src/utils"; // [!code ++]
+
+// 配置别名
+import { add } from "./src/utils"; // [!code --]
+import { add } from "@/utils"; // [!code ++]
+```
+
 ## optimization
 
 用途：设置性能优化选项，如代码分割、压缩等。
@@ -242,7 +275,11 @@ module.exports = {
 
 ## devServer
 
-用途：配置 Webpack Dev Server，一个小型的 Node.js 服务器，用于开发过程中提供实时重新加载功能, 需要安装 `webpack-dev-server`。
+用途：配置 Webpack Dev Server，一个小型的 Node.js 服务器，用于开发过程中提供实时重新加载功能。
+
+:::tip 提示
+需要安装 `webpack-dev-server`。
+:::
 
 ```js
 module.exports = {
