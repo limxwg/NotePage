@@ -29,13 +29,13 @@ export default defineConfig({
           { text: "React", link: "" },
         ],
       },
-      {
+      /* {
         text: "源码学习",
         items: [
           { text: "Vue", link: "" },
           { text: "React", link: "" },
         ],
-      },
+      }, */
       {
         text: "前端工程化",
         items: [
@@ -47,21 +47,21 @@ export default defineConfig({
           { text: "JavaScript", link: "" },
         ],
       },
-      {
+      /* {
         text: "后端",
         items: [
           { text: "Node", link: "" },
           { text: "Koa", link: "" },
           { text: "SQL", link: "" },
         ],
-      },
-      {
+      }, */
+      /* {
         text: "其他",
         items: [
           { text: "VitePress", link: "" },
           { text: "Linux", link: "" },
         ],
-      },
+      }, */
     ],
 
     sidebar: {
