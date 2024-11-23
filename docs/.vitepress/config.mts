@@ -72,6 +72,10 @@ export default defineConfig({
               text: "类型系统",
               link: "/advanced/ts/类型系统.md",
             },
+            {
+              text: "条件类型",
+              link: "/advanced/ts/条件类型.md",
+            },
           ],
         },
       ],
