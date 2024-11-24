@@ -30,9 +30,9 @@ webpack 从 4.0 版本开始，在安装 `webpack` 时，就必须要安装 `web
 
 ### 1.创建 webpack.config.js 文件
 
-```js
-// ./webpack.config.js
+在项目根目录下创建一个 `webpack.config.js` 文件，并配置如下内容：
 
+```js
 const path = require("path");
 
 module.exports = {
@@ -48,8 +48,6 @@ module.exports = {
 ### 2.配置 package.json 文件
 
 ```json
-// ./package.json
-
 {
   "scripts": {
     "build": "webpack"
