@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: My Awesome Project
-  text: A VitePress Site
-  tagline: My great project tagline
+  name: XWG 的学习笔记
+  text:
+  tagline: 记录学习的点点滴滴
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: TypeScript 学习笔记
+      link: /advanced/ts/类型系统.md
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: webpack 配置
+      link: /project/webpack/关于webpack.md
 
 features:
   - title: Feature A

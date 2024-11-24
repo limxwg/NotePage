@@ -2,14 +2,13 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "XWG 的学习笔记",
+  description: "A notebook by XWG",
   base: "/NotePage/",
   srcDir: "./src",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Examples", link: "/markdown-examples" },
       {
         text: "前端基础",
         items: [
@@ -99,14 +98,26 @@ export default defineConfig({
           ],
         },
         {
-          text: "配置 webpack",
+          text: "配置 Webpack",
           items: [
             {
-              text: "Webpack",
+              text: "Webpack 必要配置",
+              link: "/project/webpack/webpack必要配置.md",
+            },
+            {
+              text: "Webpack Js配置",
+              link: "/project/webpack/webpack_js配置.md",
+            },
+            {
+              text: "Webpack ",
               link: "",
             },
             {
-              text: "Webpack",
+              text: "Webpack ",
+              link: "",
+            },
+            {
+              text: "Webpack ",
               link: "",
             },
           ],
