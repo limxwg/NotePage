@@ -75,6 +75,10 @@ export default defineConfig({
               text: "条件类型",
               link: "/advanced/ts/条件类型.md",
             },
+            {
+              text: "类型守卫",
+              link: "/advanced/ts/类型守卫.md",
+            },
           ],
         },
       ],

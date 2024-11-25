@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: XWG 的学习笔记
+  name: XWG 的学习笔记 📚
   text:
-  tagline: 记录学习的点点滴滴
+  tagline: good good study, day day up! 🌅
   actions:
     - theme: brand
       text: TypeScript 学习笔记

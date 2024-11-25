@@ -155,6 +155,12 @@ pnpm install eslint eslint-webpack-plugin -D
   },
   "parserOptions": {
     "sourceType": "module" // 模块化
+  },
+  "extends": ["standard", "plugin:vue/vue3-essential"], // 继承的规则
+  "rules": {
+    "no-unused-vars": "warn", // 不允许有未使用的变量
+    "quotes": ["error", "double"], // 建议使用双引号
+    "semi": ["error", "always"] // 建议使用分号
   }
 }
 ```
@@ -170,6 +176,11 @@ module.exports = {
 ```
 
 :::
-在上面的 .eslintrc 文件中简单配置了 eslint 的环境，为浏览器环境，使用 es2020 的语法，模块化。
+::: tip 提示
+需要安装库 `standard` 和 `plugin:vue/vue3-essential`。
 
-### 配置 vue 使用的 eslint 规则
+```bash
+pnpm install standard plugin:vue/vue3-essential -D
+```
+
+:::
