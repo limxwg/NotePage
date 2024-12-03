@@ -43,7 +43,6 @@ export default defineConfig({
             link: "/project/webpack/关于webpack.md",
           },
           { text: "Vite", link: "" },
-          { text: "JavaScript", link: "" },
         ],
       },
       /* {
@@ -103,26 +102,31 @@ export default defineConfig({
         },
         {
           text: "配置 Webpack",
+          collapsed: false,
           items: [
             {
-              text: "Webpack 必要配置",
+              text: "必要配置",
               link: "/project/webpack/webpack必要配置.md",
             },
             {
-              text: "Webpack Js配置",
+              text: "JS 配置",
               link: "/project/webpack/webpack_js配置.md",
             },
             {
-              text: "Webpack ",
-              link: "",
+              text: "CSS 配置 ",
+              link: "/project/webpack/webpack_css配置.md",
             },
             {
-              text: "Webpack ",
-              link: "",
+              text: "TS 配置",
+              link: "/project/webpack/webpack_ts配置.md",
             },
             {
-              text: "Webpack ",
-              link: "",
+              text: "HTML 配置",
+              link: "/project/webpack/webpack_html配置.md",
+            },
+            {
+              text: "代码分割",
+              link: "/project/webpack/webpack代码分割.md",
             },
           ],
         },

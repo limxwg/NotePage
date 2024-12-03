@@ -1,4 +1,4 @@
-# Webpack Js 配置
+# Webpack JS 配置
 
 ## babel-loader
 
@@ -156,11 +156,9 @@ pnpm install eslint eslint-webpack-plugin -D
   "parserOptions": {
     "sourceType": "module" // 模块化
   },
-  "extends": ["standard", "plugin:vue/vue3-essential"], // 继承的规则
   "rules": {
-    "no-unused-vars": "warn", // 不允许有未使用的变量
-    "quotes": ["error", "double"], // 建议使用双引号
-    "semi": ["error", "always"] // 建议使用分号
+    "semi": ["error", "always"], // 代码结尾是否加分号
+    "quotes": ["error", "double"] // 是否使用双引号
   }
 }
 ```
@@ -176,11 +174,22 @@ module.exports = {
 ```
 
 :::
+在上面的 .eslintrc 文件中简单配置了 eslint 的环境，为浏览器环境，使用 es2020 的语法，模块化。同时配置了规则，代码结尾是否加分号，是否使用双引号。
+
+在实际开发中我们通常会使用 eslint 的推荐配置，而不是自己一项一项进行配置，我们可以直接继承 eslint-config-standard 或者 eslint-config-airbnb 的配置，然后根据自己项目的需求调整。
+
+```js
+module.exports = {
+  extends: ["standard", "plugin:vue/vue3-essential"],
+};
+```
+
+上面的代码继承了 eslint-config-standard 和 eslint-plugin-vue 的配置，其中的 `plugin:vue/vue3-essential` 是常用的 vue3 的配置。
 ::: tip 提示
-需要安装库 `standard` 和 `plugin:vue/vue3-essential`。
+需要安装 eslint-config-standard 和 eslint-plugin-vue 依赖。
 
 ```bash
-pnpm install standard plugin:vue/vue3-essential -D
+pnpm install eslint-config-standard eslint-plugin-vue -D
 ```
 
 :::
