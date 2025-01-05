@@ -128,6 +128,14 @@ export default defineConfig({
               text: "代码分割",
               link: "/project/webpack/webpack代码分割.md",
             },
+            {
+              text: "开发模式",
+              link: "/project/webpack/webpack开发模式.md",
+            },
+            {
+              text: "使用技巧",
+              link: "/project/webpack/webpack使用技巧.md",
+            },
           ],
         },
       ],

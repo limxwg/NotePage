@@ -82,18 +82,36 @@ module.exports = {
     splitChunks: {
       chunks: "all", // 对所有模块进行分割，同时还可以选择 "initial"（只对同步模块进行分割）和 "async"（只对异步模块进行分割）
       minChunks: 2, // 分割出来的文件的最小引用次数
-      minSize: 30000, // 分割出来的文件的最小大小，单位为字节
+      minSize: 3000, // 分割出来的文件的最小大小，单位为字节
       cacheGroups: {
         vendors: {
+          // 分割第三方库
+          filename: "vendors.js",
           test: /[\\/]node_modules[\\/]/,
           priority: -10,
         },
-        default: {
+        common: {
+          // 分割业务公共模块
+          filename: "common.js",
           minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true,
+          priority: -20, // 优先级，数值越大，优先级越高
+          reuseExistingChunk: true, // 如果当前模块已经被分割过，则复用已经分割的模块
         },
       },
+    },
+  },
+};
+```
+
+## 运行时代码分割
+
+运行时代码分割是指将 webpack 的运行时代码单独打包成一个文件，从而避免在每次打包时都重新生成运行时代码。
+
+```js
+modules.exports = {
+  optimization: {
+    runtimeChunk: {
+      name: "runtime.js",
     },
   },
 };
