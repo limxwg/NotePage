@@ -1,4 +1,4 @@
-# Webpack 必要配置
+# webpack 必要配置
 
 ## mode
 

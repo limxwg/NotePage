@@ -1,4 +1,4 @@
-# Webpack JS 配置
+# webpack JS 配置
 
 ## babel-loader
 
