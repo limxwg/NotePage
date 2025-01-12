@@ -14,7 +14,7 @@ export default defineConfig({
         items: [
           { text: "HTML", link: "" },
           { text: "CSS", link: "" },
-          { text: "JavaScript", link: "" },
+          { text: "JavaScript", link: "/base/js/无限滚动.md" },
         ],
       },
       {
@@ -63,8 +63,27 @@ export default defineConfig({
     ],
 
     sidebar: {
+      "/base/js/": [
+        {
+          text: "api",
+          collapsed: false,
+          items: [],
+        },
+        {
+          text: "案例",
+          collapsed: false,
+          items: [
+            {
+              text: "无限滚动",
+              link: "/base/js/无限滚动.md",
+            },
+          ],
+        },
+      ],
       "/advanced/ts/": [
         {
+          text: "文档",
+          collapsed: false,
           items: [
             {
               text: "类型系统",
@@ -79,6 +98,11 @@ export default defineConfig({
               link: "/advanced/ts/类型守卫.md",
             },
           ],
+        },
+        {
+          text: "案例",
+          collapsed: false,
+          items: [],
         },
       ],
       "/project/webpack/": [
