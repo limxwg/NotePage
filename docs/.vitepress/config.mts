@@ -14,7 +14,7 @@ export default defineConfig({
         items: [
           { text: "HTML", link: "" },
           { text: "CSS", link: "" },
-          { text: "JavaScript", link: "/base/js/无限滚动.md" },
+          { text: "JavaScript", link: "/base/js/无限滚动/index.md" },
         ],
       },
       {
@@ -65,9 +65,20 @@ export default defineConfig({
     sidebar: {
       "/base/js/": [
         {
-          text: "api",
+          text: "笔记",
           collapsed: false,
-          items: [],
+          items: [
+            {
+              text: "Promise",
+              collapsed: false,
+              items: [
+                {
+                  text: "Promise 状态吸收",
+                  link: "/base/js/Promise状态吸收.md",
+                },
+              ],
+            },
+          ],
         },
         {
           text: "案例",
@@ -75,14 +86,14 @@ export default defineConfig({
           items: [
             {
               text: "无限滚动",
-              link: "/base/js/无限滚动.md",
+              link: "/base/js/无限滚动/index.md",
             },
           ],
         },
       ],
       "/advanced/ts/": [
         {
-          text: "文档",
+          text: "笔记",
           collapsed: false,
           items: [
             {
