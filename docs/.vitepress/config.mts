@@ -88,6 +88,10 @@ export default defineConfig({
               text: "无限滚动",
               link: "/base/js/无限滚动/index.md",
             },
+            {
+              text: "任务队列",
+              link: "/base/js/任务队列.md",
+            },
           ],
         },
       ],
