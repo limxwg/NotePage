@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "XWG 的学习笔记",
   description: "A notebook by XWG",
-  base: "/NotePage/",
+  base: "/",
   srcDir: "./src",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
