@@ -41,10 +41,11 @@ export default defineConfig({
           {
             text: "Webpack 5",
             link: "/project/webpack/关于webpack.md",
-          },
-          { text: "Vite", link: "" },
-        ],
-      },
+        },
+        { text: "Vite", link: "" },
+        { text: "Git", link: "/project/git/commit提交规范.md" },
+      ],
+    },
       /* {
         text: "后端",
         items: [
@@ -174,6 +175,18 @@ export default defineConfig({
             {
               text: "使用技巧",
               link: "/project/webpack/webpack使用技巧.md",
+            },
+          ],
+        },
+      ],
+      "/project/git/": [
+        {
+          text: "案例",
+          collapsed: false,
+          items: [
+            {
+              text: "commit 提交规范",
+              link: "/project/git/commit提交规范.md",
             },
           ],
         },
