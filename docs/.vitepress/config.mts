@@ -1,4 +1,8 @@
 import { defineConfig } from "vitepress";
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from "vitepress-plugin-group-icons";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -41,11 +45,11 @@ export default defineConfig({
           {
             text: "Webpack 5",
             link: "/project/webpack/关于webpack.md",
-        },
-        { text: "Vite", link: "" },
-        { text: "Git", link: "/project/git/commit提交规范.md" },
-      ],
-    },
+          },
+          { text: "Vite", link: "" },
+          { text: "Git", link: "/project/git/commit提交规范.md" },
+        ],
+      },
       /* {
         text: "后端",
         items: [
@@ -209,5 +213,24 @@ export default defineConfig({
       label: "页面导航",
       level: [2, 3],
     },
+  },
+  markdown: {
+    config: (md) => {
+      //代码组图标
+      md.use(groupIconMdPlugin);
+      // 组件插入h1标题下
+      md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
+        let htmlResult = slf.renderToken(tokens, idx, options);
+        if (tokens[idx].tag === "h1") htmlResult += `<ArticleMetadata />`;
+        return htmlResult;
+      };
+    },
+  },
+
+  vite: {
+    plugins: [
+      //代码组图标
+      groupIconVitePlugin(),
+    ],
   },
 });
