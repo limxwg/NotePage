@@ -213,6 +213,9 @@ export default defineConfig({
       label: "页面导航",
       level: [2, 3],
     },
+    footer: {
+      message: "Icons by <a href='https://icons8.com'>Icons8</a>.",
+    },
   },
   markdown: {
     config: (md) => {
