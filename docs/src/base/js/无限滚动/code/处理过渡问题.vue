@@ -1,35 +1,4 @@
 <template>
-  <div class="title">处理空白区域</div>
-  <!-- 未复制滚动元素 -->
-  <div class="tech-stack">
-    <div class="scroll-container-before">未复制滚动元素</div>
-    <div class="scroll-container">
-      <div class="scroll-row row-animation">
-        <div class="tags">
-          <span>VITE</span>
-          <span>VUE</span>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-container-after"></div>
-  </div>
-  <!-- 复制滚动元素 -->
-  <div class="tech-stack">
-    <div class="scroll-container-before">复制滚动元素</div>
-    <div class="scroll-container">
-      <div class="scroll-row row-animation">
-        <div class="tags">
-          <span>VITE</span>
-          <span>VUE</span>
-        </div>
-        <div class="tags">
-          <span>VITE</span>
-          <span>VUE</span>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-container-after"></div>
-  </div>
   <div class="title">处理过渡问题</div>
   <!-- 动画起点 -->
   <div class="tech-stack">
@@ -122,9 +91,6 @@
   width: 157px;
 }
 
-.row-animation {
-  transform: translateX(-40%);
-}
 .row-animation-start {
   transform: translateX(0);
 }

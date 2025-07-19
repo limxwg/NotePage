@@ -7,7 +7,8 @@
 <script setup>
 import InfiniteScroll from './code/无限滚动.vue'
 import InfiniteScrollA from './code/滚动.vue'
-import InfiniteScrollB from './code/滚动优化.vue'
+import BlankAreaDemo from './code/处理空白区域.vue'
+import TransitionDemo from './code/处理过渡问题.vue'
 
 </script>
 
@@ -41,9 +42,11 @@ import InfiniteScrollB from './code/滚动优化.vue'
 
 这时，我们可以复制一份滚动的元素，将滚动距离设置为 `0%` ~ `-50%` ，这样就可以避免出现空白区域。
 
+<BlankAreaDemo />
+
 同时，因为滚动的元素在滚动 `-50%` 的距离后，重新循环动画，此时动画的起点和终点相同（滚动元素复制了一份，`0%` 的位置和 `-50%` 的位置渲染效果相同），动画就可以无缝滚动起来了。
 
-<InfiniteScrollB />
+<TransitionDemo />
 
 ## 代码
 
