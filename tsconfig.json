@@ -1,0 +1,17 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["vitepress/client"]
+  },
+  "include": ["docs/.vitepress/**/*", "docs/**/*.md", "docs/**/*.vue"],
+  "exclude": ["node_modules", "docs/.vitepress/dist"]
+}
